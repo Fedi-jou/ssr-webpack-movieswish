@@ -1,0 +1,25 @@
+// Styles Files Import
+@import "../components/singleContent/singlecontent.scss";
+@import "../components/contentModal/contentmodal.scss";
+@import "../components/movieCard/moviecard.scss";
+@import "../pages/carousel/carousel.scss";
+@import "../pages/wishlist/wishlist.scss";
+@import "../pages/noPage/nomatch.scss";
+@import "../utils/moviecontrol/moviecontrol.scss";
+@import "../layout/navbar/navbar.scss";
+
+// Carousel Style
+
+@import "../../../node_modules/react-alice-carousel/lib/scss/alice-carousel.scss";
+
+// Default reset and Style
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}

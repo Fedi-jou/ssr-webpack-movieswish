@@ -1,0 +1,24 @@
+@import "../../sass/colors";
+
+.carouselItem {
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+h2 {
+  margin: 20px 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: $color-primary;
+}
+
+.rounded {
+  margin: 20px auto;
+  border: 8px solid $cyan-color;
+  border-radius: 5px;
+  width: 50%;
+  opacity: 0.7;
+}

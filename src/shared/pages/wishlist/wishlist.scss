@@ -1,0 +1,42 @@
+@import "../../sass/colors";
+
+.movie-page {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .header {
+    background-color: $color-white;
+    opacity: 0.9;
+    border-radius: 20px;
+    padding: 0 40px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .count-pill {
+    display: block;
+    background-color: $color-secondary;
+    padding: 5px 15px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 999px;
+    color: $color-white;
+  }
+
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .no-movies {
+    color: $color-primary;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
