@@ -20,7 +20,7 @@ The project is about to create a Reactjs web Application without the "Create-rea
 - react-alice-carousel
 - LocalStorage
 
-### The Features that will be added in the future :
+### Mistakes auto evalution and the Features that should be added in the future :
 
 1. Of Course bugs fixes ( for carousel component in this project and for page refresh )
 2. adding Pagination for each Api call , Custom pagination component is added but it fetch the new pages in Client side so i deleted that Feature to make the pagination fetch only works in server side .
@@ -28,5 +28,6 @@ The project is about to create a Reactjs web Application without the "Create-rea
 4. SCSS files refactor and adding mixins mostly to organize the styles .
 5. Fix axios Api call for Youtube Videos for each meadia item yes i saw the bug but i was busy haha .
 6. customHook for axios .
+7. SCSS responsive version for all routes content.
 
-- The .env file and dist are uploaded in purpose not by mistake , the main reason is for any one who wants to learn then they can use the api key to check the api calls at first then get ur key \*
+- The .env file and dist are uploaded in purpose not by mistake , the main reason is for any one who wants to learn then they can use the api key to check the api calls at first then get ur key.
