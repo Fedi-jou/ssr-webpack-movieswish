@@ -20,7 +20,7 @@ app.get("*", (req, res, next) => {
     routes.find((route) => matchPath(route.path, req.url)) || {};
 
   const promise = activeRoute.fetchInitialData
-    ? activeRoute.fetchInitialData()
+    ? activeRoute.fetchInitialData(req.path)
     : Promise.resolve();
 
   promise
@@ -48,6 +48,10 @@ app.get("*", (req, res, next) => {
     })
     .catch(next);
 });
+
+// function handleExpressRequest(req, res) {
+
+// }
 
 const PORT = process.env.PORT || 3000;
 
