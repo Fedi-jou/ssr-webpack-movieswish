@@ -4,6 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./layout/navbar/Navbar";
 import Wishlist from "./pages/wishlist/Wishlist";
 import NoMatch from "./pages/noPage/NoMatch";
+import CategoryText from "./components/text/CategoryText";
+import NavBtn from "./utils/buttons_nav/NavBtn";
 import "./styles.css";
 
 export default function App({ serverData = null }) {
@@ -17,23 +19,20 @@ export default function App({ serverData = null }) {
             path={path}
             element={
               <>
-                <C
-                  data={serverData}
-                  fetchInitialData={() => fetchInitialData("movie")}
-                />
-                <C
-                  data={serverData}
-                  fetchInitialData={() => fetchInitialData("tv")}
-                />
-                <C
-                  data={serverData}
-                  fetchInitialData={() => fetchInitialData("person")}
-                />
+                <NavBtn />
+                <C data={serverData} fetchInitialData={fetchInitialData} />
               </>
             }
           />
         ))}
-
+        <Route
+          path="/"
+          element={
+            <>
+              <CategoryText /> <NavBtn />
+            </>
+          }
+        />
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
