@@ -11,33 +11,33 @@ export default function Carousel({ fetchInitialData, data }) {
     return __isBrowser__ ? window.__INITIAL_DATA__ : data;
   });
 
-  // const [loading, setLoading] = React.useState(repos ? false : true);
+  const [loading, setLoading] = React.useState(repos ? false : true);
 
   const [page, setPage] = React.useState(1);
 
   // routes = { ...routes[0], page: 3 };
 
-  // const fetchNewRepos = React.useRef(repos ? false : true);
+  const fetchNewRepos = React.useRef(repos ? false : true);
 
   // const { id } = useParams();
 
   React.useEffect(() => {
-    // if (fetchNewRepos.current === true) {
-    // setLoading(true);
-    fetchInitialData().then((repos) => {
-      setRepos(repos);
-      repos && console.log(repos, "test state");
+    if (fetchNewRepos.current === true) {
+      setLoading(true);
+      fetchInitialData().then((repos) => {
+        setRepos(repos);
+        repos && console.log(repos, "test state");
 
-      // setLoading(false);
-    });
-    // } else {
-    //   fetchNewRepos.current = true;
-    // }
-  }, [page]);
+        setLoading(false);
+      });
+    } else {
+      fetchNewRepos.current = true;
+    }
+  }, []);
 
-  // if (loading === true) {
-  //   return <i className="loading">🤹‍♂️</i>;
-  // }
+  if (loading === true) {
+    return <i className="loading">🤹‍♂️</i>;
+  }
 
   const items =
     repos &&
