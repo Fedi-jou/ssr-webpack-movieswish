@@ -20,7 +20,7 @@ The project is about to create a Reactjs web Application without the "Create-rea
 - react-alice-carousel
 - LocalStorage
 
-### Mistakes auto evalution and the Features that should be added in the future :
+### Mistakes auto evaluation and Features that should be added in the future :
 
 1. Of Course bugs fixes ( for carousel component in this project and for page refresh )
 2. adding Pagination for each Api call , Custom pagination component is added but it fetch the new pages in Client side so i deleted that Feature to make the pagination fetch only works in server side .
