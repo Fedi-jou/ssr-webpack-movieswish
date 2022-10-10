@@ -11,7 +11,7 @@ The project is about to create a Reactjs web Application without the "Create-rea
 - axios
 - Implementation of Babel config
 - webpack config for Client and Server bundles , entry / output points .
-- Implementation of webpack confing for Production mode , dist folder incliding : js , css , bundeling ...
+- Implementation of webpack confing for Production mode , dist folder including : js , css , bundling ...
 - Jest ( test configuration added with just one initial test to check if the configuration if is working or not)
 - dotenv for environment variables .
 - serialize-javascript
