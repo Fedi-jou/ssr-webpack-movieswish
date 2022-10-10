@@ -3,9 +3,20 @@ import Carousel from "./pages/carousel/Carousel.js";
 
 const routes = [
   {
-    path: "/",
+    path: "/movie",
     component: Carousel,
-    fetchInitialData: (param2) => fetchPopularRepos(param2),
+    fetchInitialData: (path = "") => fetchPopularRepos(path.split("/").pop()),
+  },
+  {
+    path: "/tv",
+    component: Carousel,
+    fetchInitialData: (path = "") => fetchPopularRepos(path.split("/").pop()),
+  },
+
+  {
+    path: "/person",
+    component: Carousel,
+    fetchInitialData: (path = "") => fetchPopularRepos(path.split("/").pop()),
   },
 ];
 
